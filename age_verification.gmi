@@ -102,3 +102,8 @@ birth = time.localtime(stat.st_mtime)
 * python: os.stat
 * go: os.Stat
 * ... and each other programming language in their own way
+
+## Additional ideas
+
+* templates for adduser, or "/etc/skel" (or similar) could also have .age file, with explanation texts for what is its purpose, and how to manipulate it (just a text file, stats are still what matters)
+
