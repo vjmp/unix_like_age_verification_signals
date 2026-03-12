@@ -1,0 +1,42 @@
+# Age verification attack vectors
+
+> Why age verification might be bad idea.
+
+Or what could go wrong when every interaction will have age category attached to that interaction. In this document, I will be thinking from "bad actor" point of view, and see how age verification could backfire.
+
+And this mostly applies open source operatings systems, since they do not have "central user repositories" like Apple or Microsoft has. But same attack vectors apply to commercial operators too.
+
+## The happy path
+
+* operating systems will provide API for "age group" information (always local, since it is inside OS)
+* this API is published to every application in system (app stores, package managers, games, browsers, scripts, programming languages, LLMs)
+* operating system will not be limiting which applications request that information, because it cannot know reasons why that information is asked
+* it becomes "standard" and every application is required to use it, because every applications is protecting children this way
+* web browsers becomes man-in-the-middle and reveal this age group information to every site that asks it, because those sites are also protecting children this way
+* and web platforms keep that information in their user profiles, because that will also protect children
+* and nothing ever gets hacked and information does not leak, because that also protects children
+* but ...
+
+## Mask truth from parents
+
+* bad sites/applications could "invert" ratings, where parents see most narrow content, and children see more cruel version
+* if parent with 18+ rating views some children site, they will get "parent" view, not "child" view
+
+## Fly below radar
+
+* if site or application is targetting children, their bad behaviour is only visible in 0-12 range (or what ever is their target range), and totally invisible to other groups
+* to view such site, user account must be on target group/rating level
+* on worst case, parents must have four accounts to view thru those sites/applications (0-12, 13-15, 16-17, 18+) to get "full picture" of them
+
+## Age as prefilter
+
+* when every visitor has their age rating broadcasted, that age rating becomes prefilter
+* then combined this prefilter with activities, it would be pretty easy to identify active members (children; they post messages) and passive observers (parents; with no produced child content)
+* bad operators can use (private) LLMs to identify/confirm children by their vocabulary and use of words
+
+## Conclusions
+
+* good people who want to protect children should not allow painting target markers all over internet on those children (protect and educate, do not expose)
+* it seems that bad operators are doing good job lobbying this "expose all children" verification
+* since this seems to be popular thing in goverments, and easily lobbied, how many members on those goverments are bad operators themselves (none of course, they just do not understand what technology enables; be careful what you wish for, you might actually get exactly that)
+* since this seems to be global "operation" (multiple countries involved at same time), are there some global bad operators involved too
