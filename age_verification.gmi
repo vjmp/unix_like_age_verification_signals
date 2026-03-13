@@ -103,7 +103,8 @@ birth = time.localtime(stat.st_mtime)
 * go: os.Stat
 * ... and each other programming language in their own way
 
-## Additional ideas
+## Additional ideas/notes
 
 * templates for adduser, or "/etc/skel" (or similar) could also have .age file, with explanation texts for what is its purpose, and how to manipulate it (just a text file, stats are still what matters)
+* in unix like systems, package managers normally operate on administrator (root) access level, and those accounts probably will be on 18+ category (or system maintenance becomes problematic)
 

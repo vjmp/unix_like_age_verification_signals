@@ -34,6 +34,11 @@ And this mostly applies open source operatings systems, since they do not have "
 * then combined this prefilter with activities, it would be pretty easy to identify active members (children; they post messages) and passive observers (parents; with no produced child content)
 * bad operators can use (private) LLMs to identify/confirm children by their vocabulary and use of words
 
+## Harmful links
+
+* it is probably easier to get child (0-12) to click harmful link (bait leading to dark corners of web) than more informed adult (18+)
+* when you can easily identify more vulnerable individuals, who would bad actors target to then?
+
 ## Conclusions
 
 * good people who want to protect children should not allow painting target markers all over internet on those children (protect and educate, do not expose)
