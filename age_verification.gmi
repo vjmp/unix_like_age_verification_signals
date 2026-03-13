@@ -34,9 +34,9 @@ I do not think that "age verification" in OS level is good idea at all. But if i
 /usr/bin/chmod 600 $HOME/.age
 ```
 
-### Verifying age (as user)
+### Verifying age (as user or as parent)
 
-* just to see, what has been configured "for me"
+* just to see, what has been configured "for me" (or for your child)
 * go to terminal and use /bin/sh or /usr/bin/sh
 * use stat to verify that modify date is correct
 
@@ -46,6 +46,12 @@ I do not think that "age verification" in OS level is good idea at all. But if i
 /usr/bin/which -a sh which touch date chmod stat
 /usr/bin/stat $HOME/.age
 ```
+
+### Parental control
+
+* parents should be actively involved in childs digital life
+* discuss with your child why "correct age" information is required and important
+* from time to time, verify that child account .age file still has correct timestamp
 
 ## A reasonably consistent real-time API for developers
 
