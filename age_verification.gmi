@@ -24,14 +24,16 @@ I do not think that "age verification" in OS level is good idea at all. But if i
 * determine where your tools are using which command
 * target file name is $HOME/.age
 * combine touch and date commands to setup that file
-* to provide some privacy, make that file readable to only user themselves using chmod
+* and to provide visibilty for parents, chown can be used to give group rights for parents
+* to provide some privacy, make that file readable to only user themselves using chmod (and parents group)
 
 ```
 /usr/bin/sh
 
-/usr/bin/which -a sh which touch date chmod stat
+/usr/bin/which -a sh which touch date chmod chown stat
 /usr/bin/touch -t $(/usr/bin/date --date "19 years ago" +%Y%m%d%H%M) $HOME/.age
-/usr/bin/chmod 600 $HOME/.age
+/usr/bin/chown child:parents $HOME/.age
+/usr/bin/chmod 660 $HOME/.age
 ```
 
 ### Verifying age (as user or as parent)
@@ -43,7 +45,6 @@ I do not think that "age verification" in OS level is good idea at all. But if i
 ```
 /usr/bin/sh
 
-/usr/bin/which -a sh which touch date chmod stat
 /usr/bin/stat $HOME/.age
 ```
 
@@ -99,6 +100,7 @@ birth = time.localtime(stat.st_mtime)
 * shell
 * touch
 * date
+* chown
 * chmod
 * stat
 
