@@ -73,7 +73,7 @@ birth = time.localtime(stat.st_mtime)
 
 ### Implications
 
-* if stat of age file fails, then user is in toddler age, who has failed to setup .age file at all
+* if stat of age file fails, then user is in toddler (0-12) age, who has failed to setup .age file at all
 * if stat read is success, then use "modified time" to interpret users age
 * only programs running on that specific account can determine user age group
 * and since full timestamp is provided, it is up to developer of specific application to calculate age group application is interested in
